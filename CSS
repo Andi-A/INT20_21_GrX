@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 hr {
@@ -13,7 +12,9 @@ input , select {
     vertical-align:middle;
 }
 
-
+.paragraph{
+    text-align: center;
+}
 
 
 *{
@@ -40,7 +41,7 @@ header {
 
 header .header-logo {
     font-family:arial;
-    font-size:24px;
+    font-size:25px;
     font-weight:900;
     color:#111;
     text-decoration: none;
@@ -51,16 +52,22 @@ header .header-logo {
     padding:20px 0;
 
 }
+
 header nav ul {
     display:block;
     margin:0 auto;
     /* width:fit-content; */
 }
 header nav ul li  {
+    font-size: 20px;
     display: inline-block;
     float:left;
     list-style:none;
-    padding:0 16px;
+    padding:0 20px;
+    background-color:#eee ;
+}
+nav ul li:hover{
+    color: red;
 }
 
 header nav ul li a {
@@ -70,18 +77,19 @@ header nav ul li a {
 }
 
 header .header-support {
-    padding-left:250px;   
+    padding-left:460px;   
 }
 
 /*Main */
 
 
  .main-img {
-    width:125%;
-    height:100%;
-    background-image: url(imgs/asuss.jpg);
+    width: 100%;
+    height: 50%; 
+    background-image: url(foto.jpg);
     background-size:contain;
 }
+
 .index-links div {
     margin:16px 16px 0;
     width:calc(100% - 32px);
@@ -192,36 +200,3 @@ ul {
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
