@@ -2,89 +2,159 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto',sans-serif;
 }
-.main{
+
+
+.container{
     width: 100%;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(laptop.jpg);
-  
+    height: 100vh;
+    background-image:url("leptopi.jpg");
     background-position: center;
     background-size: cover;
-    height: 109vh;
-    
+padding-left: 8%;
+padding-right: 8%;
+box-sizing: border-box;
 }
-
-
 .navbar{
+     height: 12%;
+     display: flex;
+     align-items: center;
+}
+.logo{
+    padding-top: 50px;
+    width: 200px;
+    cursor: pointer;
+   background-color: black;
+}
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+margin-left: 40px;
+}
+nav{
     width: 1200px;
-    height: 75px;
-    margin: auto;
-
-}
-.icon{
-    width:200px;
     float: left;
-    height: 70px;
-}
-.logo {
-    color: #ff7200;
-    font-size: 35px;
-    font-family: arial;
-    padding-left: 20px;
-    float: left;
-    padding-top:10px;
-}
- 
-
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-
+    flex:1;
+    text-align: right ;
 }
 nav ul{
-    
-    float: left;
-    display:flex;
+    float: right;
+    display:block;
     justify-content: center;
     align-items: center;
-
 }
 nav ul li{
-    float: left;
-   font-size: 14px;
-    
     list-style: none;
-    margin-top: 27px;
+    display: inline-block;
     margin-left: 60px;
-    position: relative;
-    
+    float: left;
+    font-size: 14px;
+     list-style: none;
+     margin-top: 27px;
+     position: relative;
+
 }
- nav ul li a{
-     
-    display: block;
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size:  20px;
+}
+nav ul li ul{
+margin-right: 20px;
+    display: flex;
+    position: absolute;
+}
+ul li a:hover{
+    color: green;
+}
+ul li ul li{
+    display: none;
+margin-right: 10px;
+}
+ul li:hover ul li{
+    display: inline-block;
+}
+.row{
+    
+    height: 88%;
+    align-items:center;
+    display: flex;
     text-decoration: none;
     color: white;
     font-family: arial;
 font-weight: bold;
 transition: 0.4s ease-in-out;
 }
-nav ul li ul{
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+}
+.button{
+    width: 100px;
+    color:#000;
+    font-size: 12px;
+    padding: 12px 0;
+    background:white ;
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 270px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+margin: 10px 15px;
+transition: transform 0.5s ;
+background-size: cover;
+background-position: center;
+}
+.card1{
+    background-image: url("macbook.png");
 
-    display: block;
-    position: absolute;
 }
 
-ul li a:hover{
-    color: green;
+.card p{
+    font-size: 20px;
+    color:red;
+    
 }
-ul li ul li{
-    display: none;
-margin-right: 100px;
+.card2{
+    background-image: url("lenovo.png");
 }
-ul li:hover ul li{
-    display: block;
+.card3{
+    background-image: url("aorus.png");
 }
+.card4{
+    background-image: url("macbook.png");
+}
+h5{
+    font-size: 20px;
+    color:red;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
 
 .search{
     width: 330px;
