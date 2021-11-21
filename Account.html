@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://use.fontawesome.com/your-embed-code.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "products.css">
+    <link rel = "stylesheet" href = "account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" type = "x-icon" href="images/BrainTechLogo.jpg">
     <script src="https://kit.fontawesome.com/68ce2e65bb.js" crossorigin="anonymous"></script>
@@ -52,166 +52,72 @@
     </div>
 </div>  
    
+<main>
+    <!--Creating Form box Login Or Register-->
+   <div id="login-form" class="login-page">
+       <div class="form-box">
+         <div class="button-box">
+             <div id="btn"></div>
+             <button
+             type='button'onclick="register()"class="Toggle-btn">Log In</button>
+             <button
+             type='button'onclick="register()"class="Toggle-btn">Register</button>
+             </div>
+             Creating Login Form
+             <form id="login" class="input-group-login">
+               <input type="text" class="input-field" placeholder="Email" required>
+               <input type="password" class="input-field" placeholder="Enter Password" required>
+               <input type="checkbox" class="check-box"><span>Remember Password</span>
+               <button type="submit" class="submit-btn">Log In</button>
+             </form>
+              Creating Registration Form
+             <form id="register" class="input-group-register">
+                 <input type="text"class="input-field"placeholder='First Name' required>
+                 <input type="text"class='text'class='input-field'placeholder='Last Name'required>
+                 <input type="email"class='text'class='input-field'placeholder='Email'required>
+                 <input type="password"class='text'class='input-field'placeholder='Password'required>
+                 <input type="password"class='text'class='input-field'placeholder='Re-enter Password'required>
+                 <input type="checkbox"class='check-box'><span>I agree to the terms and conditions</span>
+                 <button type="submit" class="submit-btn">Register</button>
+             </form>
+         
+           </div>
+       </div>
+   </div>
+
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var x=document.getElementById('btn');
+function register(){
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+}
+function login(){
+x.style.left='50px';
+y.style.left='450px';
+z.style.left='0px';
+}
+</script>
+<script>
+    var modal=document.getElementById('login-form');
+    window.onclick=function(event){
+        if(event.traget==modal)
+        {
+            modal.style.display='none';
+        }
+    }
+</script>
+
+</main>
 
     
 
+   
 
 
-    <!-- End of products class  -->
-
-    <div class="small-container">
-       
-        <div class = "row row-2" >
-            <h2>All Products</h2>
-
-        </div>
-
-        
-        <div class="row">
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-                
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-                
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-                
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-                
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-            <div class="col-4">
-                <img src="images/macbook.jpg" alt="">
-
-                <h4>Asus Gaming</h4>
-               
-                <p>$1700</p>
-
-            </div>
-        </div>
-       
-    </div>
-
-    <!-- offer  -->
-
-
-
-    <!--Build a part to tell about website creaters -->
+    
 
    
 
@@ -267,3 +173,5 @@
     
 </body>
 </html>
+
+       
