@@ -203,8 +203,27 @@ nav ul li {
     
     display: inline-block;
     margin-bottom:10px;
-    
+    float: left;
     margin-right:40px;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 13px 10px;
+}
+nav ul li ul{
+    display: none;
+    position:absolute;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a:hover{
+    color: red;
+
 }
 a {
     text-decoration:none;
