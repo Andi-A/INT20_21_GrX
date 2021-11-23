@@ -44,7 +44,6 @@ position: relative;
 }
 #btn{
 
-
     top: 0;
     left: 0;
     position: absolute;
@@ -76,7 +75,7 @@ position: relative;
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px soli;
+    border-bottom: 1px solid;
     outline: none;
     background: transparent;
 }

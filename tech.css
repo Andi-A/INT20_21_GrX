@@ -182,8 +182,9 @@ p {
 }
 .col-4 img {
     width:100%;
-
+    
 }
+
 .title {
     text-align:center;
     margin:0 auto 80px;
@@ -218,6 +219,15 @@ h4 {
     transform:translateY(-5px);
 
 }
+.col-4 h4 {
+    text-align: center;
+}
+
+.col-4 p {
+    line-height: 30px;
+    text-align: center;
+}
+
 .offer {
     background-color:#18191a;
 
@@ -235,9 +245,7 @@ small {
 }
 /* brands */
 .brands {
-    margin:100px auto;
-
-
+    margin:50px auto;
 
 }
 .col-5 {
@@ -248,6 +256,12 @@ small {
     width:90%;
     cursor:pointer;
 }
+
+
+
+
+/* Footer */
+
 /* Footer */
 .footer {   
 
@@ -343,3 +357,86 @@ ul li {
     display:none;
 } 
   
+ .menu-icon {
+    width:28px;
+    background-color:white;
+    border-radius: 3px;
+    margin-left:20px;
+    margin-bottom:8.5px;
+    display:none;
+} 
+  
+
+
+
+
+
+
+
+
+
+/* Footer search box */
+
+.search-container {
+    height: 200px;
+   
+}
+.titleAndText{
+    text-align: center;
+    padding-top:50px;
+    line-height:30px;
+    color:white;
+}
+.titleAndText h3 {
+    font-size:30px;
+}
+.titleAndText p {
+    text-align: center;
+    padding-top:20px;
+}
+
+.variation-search {
+    text-align: center;
+    padding-top:30px;
+}
+div.variation-search {
+    position: relative;
+}
+.variation-search #search-text {
+    width:400px;
+    height:30px;
+    outline:0;
+    font-size:16px;
+    font-family: 'Poppins' ,sans-serif;
+
+}
+
+.variation-search #search-button {
+    
+    height:29px;
+    outline:none;
+    border:0;
+    cursor:pointer;
+    border-radius: 2px;
+    font-size:15px;
+    padding:0 5px;
+    font-family: 'Poppins' ,sans-serif;
+    
+}
+#search-button:hover{
+    background-color: black;
+    color:white;
+}
+.variation-search i {
+    margin-right: 3px;
+    color:white;
+}
+
+/* Pdf file */
+#pdf-file:hover {
+    margin-top: 5px;
+    
+    font-size:17px;
+    color:dimgrey;
+
+}
