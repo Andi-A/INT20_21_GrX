@@ -411,6 +411,8 @@ ul li {
 /* List editing */
 .list-4 {
     height:215px;
+    
+   
 }
 
 /* Product editing  */
@@ -425,9 +427,11 @@ ul li {
     padding:10px;
 }
 .col-4 ul {
-    list-style-type: circle;
+    list-style-type:square;
     padding-left:20px;
 }
+
+
 .col-4 ul li {
     font-size:14px;
     line-height:22px;

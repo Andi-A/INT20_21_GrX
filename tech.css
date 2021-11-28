@@ -249,14 +249,20 @@ h4 {
 .footer-col-2{
     flex:1;
     text-align:center;
+    
+}
+.footer-col-2 p{
+    padding-left:90px ;
 }
 .footer-col-2 img{
     width:180px;
     margin-bottom:20px;
+    padding-left:90px ;
 }
 .footer-col-3 , .footer-col-4 {
     flex-basis:12%;
-    text-align:center;
+padding-left: 150px;   
+color: white;
 }
 
 /* Footer logo editing */
