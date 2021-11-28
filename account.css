@@ -5,15 +5,20 @@
     box-sizing: border-box;
 }
 body{
+   
+  
+
+
     background-image: url(haker.jpg);
     background-position: center;
     background-size: cover;
 }
+
 h1,h2 ,h3 ,h4 ,p,a{
     color:white;
 
 }
-#login-form{
+ #login-form{
     display: block;
 }
 .form-box{
@@ -102,8 +107,8 @@ span{
     bottom: 68px;
     position:absolute;
 
-}
-#login{
+} 
+ #login{
     left: 50px;
 }
 #login input{
@@ -122,10 +127,10 @@ span{
 body {
     background-color:black;
     font-family: 'Poppins', sans-serif;
-}
+} 
 /* Menu */
 
-.navigation-bar {
+ .navigation-bar {
     display:flex;
     align-items:center;
     padding:20px;
@@ -485,4 +490,4 @@ ul li {
 .select:focus{
     outline:none;
 
-}
+} 
