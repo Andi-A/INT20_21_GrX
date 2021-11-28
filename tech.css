@@ -6,9 +6,8 @@
 }
 h1,h2 ,h3 ,h4 ,p,a{
     color:white;
-
+    text-decoration: none;
 }
-
 body {
     background-color:black;
     font-family: 'Poppins', sans-serif;
@@ -20,23 +19,15 @@ body {
     align-items:center;
     padding:20px;
   
-}
-
-
- .search-box  a input{
-   
-}   
+}  
 .search-box {
-    
     top:50%;
     left :50%;
     background-color:white;
-    
     height:40px;
     border-radius:40px;
     padding:0px;
     padding-bottom:-10px;
-
 }
 .search-btn{
     color:#e84118;
@@ -53,44 +44,33 @@ body {
     width:240px;
     padding: 0 6px;
 }
-
 .search-box:hover>.search-btn{
     background: white;
-
 }
 .search-txt{
-    border:0;
-    
+    border:0; 
     border:none;
     background:none;
     outline:none;
     float:left;
     height:40px;
-    
     color:black;
     font-family: 'Poppins',sans-serif;
     font-size:16px;
     transition: 0.4s;
     line-height: 10px;
     width: 0;
-
 }
-
-
 nav {
     flex : 1;
     text-align:right;
-
 }
 /* Menu */
 nav ul {
-
     display:inline-block;
     list-style:none;
-
 }
 nav ul li {
-    
     display: inline-block;
     margin-bottom:10px;
     float: left;
@@ -106,24 +86,20 @@ nav ul li ul{
     position:absolute;
     padding: 10px;
     border-radius: 0px 0px 4px 4px;
-
 }
 nav ul li:hover ul{
     display: block;
 }
 nav ul li ul li a:hover{
     color: red;
-
 }
 a {
     text-decoration:none;
-    color:white;
-
+     color:white;
 }
 p {
     color:white;
 }
-
 .container {
     max-width:1300px;
     margin:auto;
@@ -142,15 +118,12 @@ p {
 }
 .col-2 img {
     max-width: 100%;
-    
-
 }
 .col-2 h1 {
     font-size:50px;
     color:white;
     line-height:60px;
     margin:25px 0;
-
 }
 .btn {
     display: inline-block;
@@ -160,20 +133,13 @@ p {
     margin:30px 0 ;
     border-radius:30px;
     transition: background 0.5s;
-
 }
 .btn:hover {
     background-color:lightslategray;
-
-}
-.header {
-   
-
 }
 .header .row {
     margin-top:70px;
 }
-
 .categories {
     margin:70px 0;
 }
@@ -184,8 +150,8 @@ p {
 }
 .col-3 img {
     width: 100%;
-
 }
+/* Editing the brand content and categories in home */
 .small-container {
     max-width:1080px;
     margin:auto;
@@ -201,7 +167,6 @@ p {
 }
 .col-4 img {
     width:100%;
-    
 }
 
 .title {
@@ -222,50 +187,36 @@ p {
     bottom:0;
     left:50%;
     transform:translateX(-50%);
-
-
 }
 h4 {
     color:white;
     font-weight: normal;
-
 }
 .col-4 p {
     font-size:14px;
-
 }
 .col-4:hover {
     transform:translateY(-5px);
-
 }
 .col-4 h4 {
     text-align: center;
 }
-
 .col-4 p {
     line-height: 30px;
     text-align: center;
 }
-
 .offer {
     background-color:#18191a;
-
     margin-top:80px;
     padding:30px 0 ;
-
 }
 .col-2 .offer-img {
-    padding:50px;
-    
+    padding:50px; 
 }
-small {
-    color:white;
 
-}
-/* brands */
+/* Brand product editing */
 .brands {
     margin:50px auto;
-
 }
 .col-5 {
     width:160px;
@@ -275,67 +226,40 @@ small {
     width:90%;
     cursor:pointer;
 }
-
-
-
-
 /* Footer */
-
-/* Footer */
-.footer {   
-
-   
-    
+.footer {     
     font-size:14px;
     padding:60px 0 20px;
-
-
 }
 .footer p{
     color:white;
-
 }
 .footer h3 {
     color:white;
     margin-bottom:20px;
-
 }
 .footer-col-1, .footer-col-2 ,.footer-col-3,.footer-col-4{
     min-width: 250px;
     margin-bottom:20px;
-
 }
 .footer-col-1{
     flex-basis:30%;
-
 }
 
 .footer-col-2{
     flex:1;
     text-align:center;
-    
 }
 .footer-col-2 img{
     width:180px;
     margin-bottom:20px;
-
-  
 }
 .footer-col-3 , .footer-col-4 {
     flex-basis:12%;
     text-align:center;
-
-
-}
-ul {
-
-    list-style:none;
-}
-ul li {
-    color:white;
-
 }
 
+/* Footer logo editing */
 .app-logo {
     margin-top:30px;
     position:relative;
@@ -348,24 +272,19 @@ ul li {
 .appstore {
     position:absolute;
     top:0;
-    right:50px;
-    
+    right:50px;  
 }
 .app-logo img {
     width:140px;
-
 }
 .footer hr  {
     border:none;
-
     background:white;
     height: 1px;
     margin:20px 0;
-
 }
 .copyright{
     text-align:center;
-
 }
  .menu-icon {
     width:28px;
@@ -375,27 +294,9 @@ ul li {
     margin-bottom:8.5px;
     display:none;
 } 
-  
- .menu-icon {
-    width:28px;
-    background-color:white;
-    border-radius: 3px;
-    margin-left:20px;
-    margin-bottom:8.5px;
-    display:none;
-} 
-  
 
 
-
-
-
-
-
-
-
-/* Footer search box */
-
+/* Body search box  editing*/
 .search-container {
     height: 200px;
    
@@ -413,7 +314,6 @@ ul li {
     text-align: center;
     padding-top:20px;
 }
-
 .variation-search {
     text-align: center;
     padding-top:30px;
@@ -427,11 +327,8 @@ div.variation-search {
     outline:0;
     font-size:16px;
     font-family: 'Poppins' ,sans-serif;
-
 }
-
-.variation-search #search-button {
-    
+.variation-search #search-button { 
     height:29px;
     outline:none;
     border:0;
@@ -439,8 +336,7 @@ div.variation-search {
     border-radius: 2px;
     font-size:15px;
     padding:0 5px;
-    font-family: 'Poppins' ,sans-serif;
-    
+    font-family: 'Poppins' ,sans-serif; 
 }
 #search-button:hover{
     background-color: black;
@@ -450,12 +346,9 @@ div.variation-search {
     margin-right: 3px;
     color:white;
 }
-
-/* Pdf file */
+/* Pdf file form  */
 #pdf-file:hover {
     margin-top: 5px;
-    
     font-size:17px;
     color:dimgrey;
-
 }
