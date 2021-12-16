@@ -102,6 +102,8 @@ nav ul li:hover ul{
 nav ul li ul li a:hover{
     color: red;
 }
+
+
 /* Contact Editing*/
 .contact-bg {
     text-align: center;
@@ -136,7 +138,6 @@ nav ul li ul li a:hover{
 .contact-info span {
     display:block;
     font-style:normal;
-
 }
 .contact-info div {
     margin:14px 0;

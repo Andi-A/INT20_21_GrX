@@ -273,9 +273,6 @@ p {
 } 
   
 
-
-
-
 /* Pc categories */
 .pc-categories{
     width: 80%;
@@ -302,8 +299,6 @@ p {
 }
 .categories-img img{
     width: 50%;
-    object-fit: contain;
-    
     border-radius:4px;
     opacity: 0.6;
     cursor:pointer;
@@ -364,7 +359,6 @@ table img{
     height:200px;
 }
 .pc-list {
-  
     height:270px;
 }
 
@@ -391,7 +385,6 @@ table img{
     border:0.5px solid white;
     color:white;
     cursor:pointer;
-
 }
 #Compare:hover{
     color:white;
