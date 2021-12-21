@@ -278,7 +278,8 @@ p {
     width: 80%;
     height:150px;
     margin:20px auto;
-
+    display: flex;
+    justify-content: space-around;
 }
 .categories-img {
     display: inline-block;
@@ -329,7 +330,8 @@ table {
 table td{
     border:1px double grey;
     height: 400px;
-    width:400px
+    width:400px;
+ 
 }
 
 table h4 {
@@ -357,17 +359,22 @@ table img{
 .pc-img {
     width:100%;
     height:200px;
+    margin-bottom: 50px;
 }
 .pc-list {
     height:270px;
+    
 }
 
 
 /* Products button */
 .desk-btn {
-    width:95%;
-    margin:0 auto;
+    /* width:95%;
+    margin:0 auto; */
     margin-bottom:10px;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .desk-btn input{

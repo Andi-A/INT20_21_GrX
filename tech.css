@@ -12,6 +12,8 @@ body {
     background-color:black;
     font-family: 'Poppins', sans-serif;
 }
+
+
 /* Menu */
 
 .navigation-bar {
@@ -152,6 +154,7 @@ p {
 .col-3 img {
     width: 100%;
 }
+
 /* Editing the brand content and categories in home */
 .small-container {
     max-width:1080px;
@@ -217,6 +220,7 @@ h4 {
     background-color:#18191a;
     margin-top:80px;
     padding:30px 0 ;
+    background: -webkit-linear-gradient(right,#000000,#0f3c5a);
 }
 .col-2 .offer-img {
     padding:50px; 
@@ -237,7 +241,7 @@ h4 {
     cursor:pointer;
 }
 /* Footer */
-.footer {     
+/* .footer {     
     font-size:14px;
     padding:60px 0 20px;
 }
@@ -253,8 +257,8 @@ h4 {
     margin-bottom:20px;
 }
 .footer-col-1{
-    flex-basis:30%;
-}
+    flex-basis:30%; */
+/* }
 .footer-col-2{
     flex:1;
     text-align:center;
@@ -271,7 +275,7 @@ h4 {
     flex-basis:12%;
     padding-left: 150px;   
     color: white;
-}
+} */
 
 /* Footer logo editing */
 .app-logo {
