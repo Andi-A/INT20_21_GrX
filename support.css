@@ -3,6 +3,8 @@
     margin :0;
     padding:0;
     box-sizing: border-box;
+    font-style:normal;
+    
 }
 h1,h2 ,h3 ,h4 ,p,a{
     color:white;
@@ -100,12 +102,17 @@ nav ul li:hover ul{
 nav ul li ul li a:hover{
     color: red;
 }
+
+
 /* Contact Editing*/
 .contact-bg {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-style: normal;
+
+
+    font-style:normal;
+
 }
 .contact-bg h3 {
     font-size:20px;
@@ -115,6 +122,7 @@ nav ul li ul li a:hover{
     padding-top: 30px;
     font-weight:300;
     opacity:0.9;
+    font-style:normal;
 }
 .contact-bg .text {
     margin:20px 0;
@@ -133,6 +141,7 @@ nav ul li ul li a:hover{
 }
 .contact-info span {
     display:block;
+    font-style:normal;
 }
 .contact-info div {
     margin:14px 0;
@@ -152,6 +161,7 @@ nav ul li ul li a:hover{
     grid-template-columns: repeat(2,1fr);
     padding:32px 0;
     border-top:1px solid white;
+    
 }
 .contact-information{
     display:flex;
@@ -159,6 +169,7 @@ nav ul li ul li a:hover{
 }
 .contact-form form {
     padding-bottom:16px;
+    margin-left:20px;
 }
 .form-control{
     width:100%;

@@ -274,15 +274,13 @@ padding-left: 100px;
 } 
   
 
-
-
-
 /* Pc categories */
 .pc-categories{
     width: 80%;
     height:150px;
     margin:20px auto;
-
+    display: flex;
+    justify-content: space-around;
 }
 .categories-img {
     display: inline-block;
@@ -303,8 +301,6 @@ padding-left: 100px;
 }
 .categories-img img{
     width: 50%;
-    object-fit: contain;
-    
     border-radius:4px;
     opacity: 0.6;
     cursor:pointer;
@@ -335,7 +331,8 @@ table {
 table td{
     border:1px double grey;
     height: 400px;
-    width:400px
+    width:400px;
+ 
 }
 
 table h4 {
@@ -363,18 +360,22 @@ table img{
 .pc-img {
     width:100%;
     height:200px;
+    margin-bottom: 50px;
 }
 .pc-list {
-  
     height:270px;
+    
 }
 
 
 /* Products button */
 .desk-btn {
-    width:95%;
-    margin:0 auto;
+    /* width:95%;
+    margin:0 auto; */
     margin-bottom:10px;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .desk-btn input{
@@ -392,7 +393,6 @@ table img{
     border:0.5px solid white;
     color:white;
     cursor:pointer;
-
 }
 #Compare:hover{
     color:white;
