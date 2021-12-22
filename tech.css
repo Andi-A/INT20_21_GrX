@@ -223,7 +223,13 @@ h4 {
     background: -webkit-linear-gradient(right,#000000,#0f3c5a);
 }
 .col-2 .offer-img {
-    padding:50px; 
+    padding:50px;
+   
+}
+.offer-img{
+    transform: rotate(-20deg);
+    transform:rotateY(30deg);
+    transform:rotateZ(360deg);
 }
 
 /* Brand product editing */
@@ -341,9 +347,9 @@ div.variation-search {
 .variation-search #search-text {
     width:400px;
     height:30px;
-    outline:0;
     font-size:16px;
     font-family: 'Poppins' ,sans-serif;
+    
 }
 .variation-search #search-button { 
     height:29px;
@@ -419,6 +425,34 @@ div.variation-search {
     justify-content: space-evenly;
     align-items:center;
 }
+
+
+
+/* footer title animation  */
+
+.footer-title h2{
+    animation: footer-Title-Animation 20s;
+    animation-play-state: running;
+    animation-iteration-count:infinite;
+}
+
+@keyframes footer-Title-Animation{
+
+    20%{
+        color:#0f3c5a;
+    }
+
+    40%{
+        color:#55ACEE;
+    }
+    60%{
+        color:aqua;
+        font-size:24px;
+    }
+
+}
+
+
 /* social media  */
 .footer-contact {
     width:250px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+        
     <link rel="shortcut icon" type = "x-icon" href="images/BrainTechLogo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "tech.css">
@@ -29,6 +29,7 @@
              font-family: 'Poppins', sans-serif;
             }
     </style>
+    
 </head>
 <body>
 
@@ -245,11 +246,13 @@
 
 
     <!-- Footer search -->
+    <!--  Reinvetn search title-->
+   
 
     <div class="search-container">
         <div class="search-second-container">
             <div class="titleAndText">
-                <h3>Can't find what you're looking for ?</h3>
+                <h3 id = "reinvent-search"></h3>
                 <p>Reinvent Search</p>
             </div>
 
@@ -313,7 +316,7 @@
                 </div>
             </div>
             <div class = "footer-title">
-                <div >
+                <div>
                     <h2>TEAM UP. FLIGHT ON</h2>
                 </div>
             </div>
@@ -366,7 +369,7 @@
                         <h2>EXPLORE</h2>
                     </div>
                     <div class = "footer-column">
-                        <p>News</p>
+                        <a href="news.html"><p>News</p></a>
                         <p>Events</p>
                         <p>Blog</p>
                         <p>Wallpaper</p>
@@ -407,11 +410,24 @@
             </div>
         </div>
     </footer>
-    
+
+
+    <script type = "text/javascript">
+        // task 10 
+
+
+        document.getElementById("reinvent-search").innerHTML = "Can't find what you're looking for ?";
+        document.getElementById("reinvent-search").style.fontSize = "30px";
+        document.getElementById("reinvent-search").style.color = "white";
+        document.getElementById("reinvent-search").style.backgroundColor = "black";
+
+
+    </script>
 
 
 
-
-    
 </body>
 </html>
+
+
+ 
