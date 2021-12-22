@@ -223,7 +223,8 @@ p {
 .footer-col-3 , .footer-col-4 {
     flex-basis:12%;
     text-align:center;
-
+color: white;
+padding-left: 100px;
 }
 
 /* App footer logo */
