@@ -136,6 +136,12 @@ p {
     flex-wrap:wrap;
     justify-content:space-around;
 }
+.row ul {
+        list-style:none; 
+}
+.row ul li{
+        color:white;
+}
 .col-2 {
     flex-basis:50%;
     min-width:300px;
@@ -348,6 +354,7 @@ p {
 .laptop-categories-title h4{
     letter-spacing: 0.5px;
     text-align: center;
+   
 }
 .laptop-categories-title h4:hover{
     color:grey;
@@ -454,14 +461,7 @@ small {
     cursor:pointer;
 }
 
-ul {
 
-    list-style:none;
-}
-ul li {
-    color:white;
-
-}
 
 .app-logo {
     margin-top:30px;
@@ -581,6 +581,8 @@ ul li {
     margin:0 auto;
     background-color: black;
     padding:0;
+    
+
 }
 /* second container  */
 .footer-1{
@@ -620,12 +622,17 @@ ul li {
     font-weight: 500;
     margin:30px 0;
 }
+.column-title h2{
+    color:white;
+}
 /*  footer columns  */
 .footer-column p
 {
     display:block;
     font-size:14px;
     margin:15px 0;
+    color:white;
+
 }
 .footer-column p:hover{
     color:grey;
@@ -667,6 +674,7 @@ ul li {
  
 
 
+  
 
   /*  window for the first product */
 .hidden{
@@ -676,6 +684,7 @@ ul li {
   position: fixed;
   top: 50%;
   left: 50%;
+  height: 85%;
   transform: translate(-50%, -50%);
   width: 70%;
   background-color: white;
@@ -683,16 +692,18 @@ ul li {
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  color:black;
 }
 .close-button{
     position: absolute;
-    top: 1.2rem;
-    right: 2rem;
-    font-size: 5rem;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
     color: #333;
     cursor: pointer;
     border: none;
     background: none;
+    
 }
 .overlay {
     position: fixed;
@@ -701,7 +712,40 @@ ul li {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-    z-index: 5;
+    backdrop-filter: blur(-5px);
+  }
+  .first-product-description h1,h2,h3 ,p , ul, li{
+    color:black;
+  }
+  .first-product-description ul li{
+    color:black;
   }
   
+.first-product-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-product-title , .first-product-images{
+    width: 50%;
+}
+
+.first-product-title #thinkpad , #thinkpad1{
+    font-size:20px;
+    margin:20px 0 20px;
+}
+.first-product-title #rating {
+    margin:20px 0 20px;
+}
+.first-product-title li {
+    margin:10px 0 ;
+    margin-left:20px;
+}
+.first-product-images{
+    width: 50%;
+}
+.first-product-images img{
+    padding-right:20px;
+    width: 100%;
+}
+

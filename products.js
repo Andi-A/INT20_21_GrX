@@ -26,7 +26,6 @@ const btnLearnMore = document.getElementById('LearnMore');
 btnLearnMore.addEventListener('click',function(){
    first_product.classList.remove('hidden');
    overlay.classList.remove('hidden');
-
 });
 
 // 1.
@@ -41,4 +40,5 @@ overlay.addEventListener('click', function(){
     first_product.classList.add('hidden');
     overlay.classList.add('hidden');
 })
+
 
