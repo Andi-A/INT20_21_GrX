@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Products</title>
+    <script>
+        function validateForm() {
+          let x = document.forms["login"]["validate"].value;
+          if (x == "") {
+            alert("All forms must be filled");
+            return false;
+          }
+        }
+        </script>
 </head>
 <body>
 
@@ -68,7 +77,7 @@
               SignUp Form
            </div>
         </div>
-        <div class="form-container">
+        <div class="form-container" id="form">
            <div class="slide-controls">
               <input type="radio" name="slide" id="login" checked>
               <input type="radio" name="slide" id="signup">
@@ -78,38 +87,48 @@
            </div>
            <div class="form-inner">
                  <!--Login form-->
-              <form action="#" class="login">
-                 <div class="field">
-                    <input type="text" placeholder="Email Address" required>
+              <form name="login" action="#" class="login" onsubmit="return validateForm()" requried >
+                <div class="form-control">  
+                <div class="field">
+                     
+                    <input  type="text" name="validate" id="Email" placeholder="Email Address" >
                  </div>
+                 <small>Error message</small>
+                 </div>
+                 <div class="form-control">
                  <div class="field">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="validate" id="Password" placeholder="Password" >
+                 </div>
+                 <small>Error message</small>
                  </div>
                  <div class="pass-link">
                     <a href="#">Forgot password?</a>
                  </div>
                  <div class="field btn">
                     <div class="btn-layer"></div>
-                    <input type="submit" value="Login">
+                    <input type="submit" id="submit" value="Login">
                  </div>
                  <div class="signup-link">
                     Not a member? <a href="">SignUp now</a>
                  </div>
               </form>
               <!--Signup form-->
-              <form action="#" class="signup">
+              <form name="login" action="#" class="signup" onsubmit="return validateForm()">
                  <div class="field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input name="validate" type="text" id="Email" placeholder="Email Address" >
                  </div>
+                 <small>Error message</small>
                  <div class="field">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="validate" id="Password" placeholder="Password" >
                  </div>
+                 <small>Error message</small>
                  <div class="field">
-                    <input type="password" placeholder="Confirm password" required>
+                    <input type="password" name="validate" id="Password2" placeholder="Confirm password" >
                  </div>
+                 <small>Error message</small>
                  <div class="field btn">
                     <div class="btn-layer"></div>
-                    <input type="submit" value="Signup">
+                    <input type="submit" id="submit" value="Signup">
                  </div>
               </form>
            </div>
@@ -135,6 +154,43 @@
           signupBtn.click();
           return false; //To change the form to sign up
         });
+      
+//Form Validation 
+//Checking the inputs if they have value
+//           const form=document.getElementById('form');
+//           const Email=document.getElementById('Email');
+//           const Password=document.getElementById('Password');
+//           const Password2=document.getElementById('Password2');
+//          form.addEventListener('submit', (e)=>{
+//             e.preventDefault();
+//             checkInputs();
+//          });
+//       function checkInputs(){
+//           //get the values from the inputs;
+//           const emailValue=Email.value.trim(); //trim() removes the white space form the string
+//           const passValue=Password.value.trim();
+//           const pass2Value=Password2.value.trim();
+
+
+
+//           if(emailValue===''){
+//               //show error //add error class
+//              setErrorFor(Email, 'Please enter a valid email'); 
+//           }
+//           else{
+//               //add success class
+//               setSuccessFor(Email);
+//           }
+//           function setErrorFor(input,message){
+//               const formControl=input.parentElement;//form-control
+//               const small=formControl.querySelector('small');
+// //add error message inside  small
+//                small.innerText=message;
+//                // add error class
+//                formControl.className='form-control error ';
+          //}
+      // }
+
      </script>
 
 
