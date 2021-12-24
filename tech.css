@@ -12,7 +12,9 @@ body {
     background-color:black;
     font-family: 'Poppins', sans-serif;
 }
-
+.logo:hover{
+    transform: rotate(45deg);
+}
 
 /* Menu */
 
@@ -289,6 +291,7 @@ h4 {
     position:relative;
     background-color:white;
 }
+
 .googleplay {
     position:absolute;
     top:0;
@@ -517,4 +520,5 @@ margin-right: 10px;
   .video1{
       display: inline;
       margin-left: 100px;
+      border-color: #0f3c5a;
   }

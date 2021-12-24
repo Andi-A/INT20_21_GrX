@@ -11,6 +11,9 @@ body {
     background-color:black;
     font-family: 'Poppins', sans-serif;
 }
+.logo:hover{
+    transform: rotate(45deg);
+}
 /* Menu */
 .navigation-bar {
     display:flex;

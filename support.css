@@ -10,7 +10,9 @@ h1,h2 ,h3 ,h4 ,p,a{
     color:white;
     text-decoration: none;
 }
-
+.logo:hover{
+    transform: rotate(45deg);
+}
 body {
     background-color:black;
     font-family: 'Poppins', sans-serif;

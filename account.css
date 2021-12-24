@@ -14,7 +14,9 @@ body{
     background-size: cover;
 }
 /*Login&Registration Form*/
-
+.logo:hover{
+    transform: rotate(45deg);
+}
 ::selection{
     background: #fa4299;
     color: #fff;
