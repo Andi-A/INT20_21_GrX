@@ -5,8 +5,11 @@
     box-sizing: border-box;
 }
 body{
+   
+  
+
     place-items: center;
-    background-image: url(haker.jpg); 
+     background-image: url(haker.jpg); 
     background-position: center;
     background-size: cover;
 }
@@ -17,7 +20,7 @@ body{
     color: #fff;
   }
   .wrapper{
-    margin-left: 600px;
+    margin-left: 500px;
     margin-top: 30px;
     margin-right: 40px;
     overflow: hidden;  /*Hiding Sign Up title or Login title*/
