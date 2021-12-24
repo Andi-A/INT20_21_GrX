@@ -354,6 +354,7 @@ p {
 .laptop-categories-title h4{
     letter-spacing: 0.5px;
     text-align: center;
+   
 }
 .laptop-categories-title h4:hover{
     color:grey;
@@ -580,6 +581,8 @@ small {
     margin:0 auto;
     background-color: black;
     padding:0;
+    
+
 }
 /* second container  */
 .footer-1{
@@ -619,12 +622,17 @@ small {
     font-weight: 500;
     margin:30px 0;
 }
+.column-title h2{
+    color:white;
+}
 /*  footer columns  */
 .footer-column p
 {
     display:block;
     font-size:14px;
     margin:15px 0;
+    color:white;
+
 }
 .footer-column p:hover{
     color:grey;
@@ -666,6 +674,7 @@ small {
  
 
 
+  
 
   /*  window for the first product */
 .hidden{
