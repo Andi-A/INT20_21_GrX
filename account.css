@@ -84,6 +84,7 @@ body{
   input[type="radio"]{
     display: none;
   }
+  
    #signup:checked ~ .slider-tab{ /*Gives us the transition from Login to Sign Up title*/
     left: 50%;
   } 
