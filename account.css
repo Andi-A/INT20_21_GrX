@@ -141,7 +141,7 @@ body{
   }
   .form-inner form .pass-link a,
   .form-inner form .signup-link a{
-    color: tra;
+    color: transparent;
     text-decoration: none;
   }
   .form-inner form .pass-link a:hover,
