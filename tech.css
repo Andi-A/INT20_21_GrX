@@ -511,14 +511,8 @@ div.variation-search {
     background: #125688;
     color: white;
   }
-  .video{
 
-    display: inline;
-margin-left: 60px;
-margin-right: 10px;
-  }
   .video1{
-      display: inline;
-      margin-left: 100px;
+      
       border-color: #0f3c5a;
   }
