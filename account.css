@@ -4,6 +4,10 @@
     padding:0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: A_A;
+    src:url('webfont.eot');
+  }
 body{
    
   
@@ -25,9 +29,9 @@ body{
     margin-left: 500px;
     margin-top: 30px;
     margin-right: 40px;
-    overflow: hidden;  /*Hiding Sign Up title or Login title*/
+      overflow: hidden; /*Hiding SignUp title or Login title */
     max-width: 390px;
-    background: transparent;
+   
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
@@ -42,7 +46,7 @@ body{
     font-weight: 600;
     text-align: center;
     
-    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55); /*Title bounces */
   }
   
   .wrapper .slide-controls{
@@ -50,7 +54,7 @@ body{
     display: flex;
     height: 50px;
     width: 100%;
-    overflow: hidden;
+   
     margin: 30px 0 10px 0;
     justify-content: space-between;
     border: 1px solid green;
@@ -66,11 +70,9 @@ body{
     line-height: 48px;
     cursor: pointer;
     z-index: 1; /*If 0 title inside is not visible*/
-    transition: all 0.6s ease;
+    
   }
-  .slide-controls label.signup{
-    color: #000;
-  }
+  
   .slide-controls .slider-tab{
     position: absolute;
     height: 100%;
@@ -79,19 +81,20 @@ body{
     z-index: 0;
     border-radius: 5px;
     background: -webkit-linear-gradient(left, green, blue   );
-    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55); /*Bounces Login and Sign Up slides*/
   }
   input[type="radio"]{
     display: none;
   }
   
-   #signup:checked ~ .slider-tab{ /*Gives us the transition from Login to Sign Up title*/
+    #signup:checked ~ .slider-tab{ /*Gives us the transition from Login to Sign Up title*/
     left: 50%;
-  } 
+    /*matches all .slidertab elements that are siblings of signup:checked and appear after it.*/
+  }      
   
-   #signup:checked ~ label.login{ /*Gives the color red to LogIn when you are at SignUp*/
+    #signup:checked ~ label.login{ /*Gives the color red to LogIn when you are at SignUp*/
     color: red;
-  } 
+  }  
   #login:checked ~ label.signup{/*Gives the color red to SignUp when you are at Login*/
     color: red;
   }
@@ -104,9 +107,9 @@ body{
     display: flex;   /*Flex so you can display Sign Up and Login form behind each other */
     width: 200%;
   }
-  .form-container .form-inner form{  /*Transition when changing from Login to Signup vice versa*/
+  .form-container .form-inner form{  
     width: 50%;
-     transition: all 0.6s;
+     transition: all 0.6s;/*Transition when changing from Login to Signup vice versa*/
   }
   .form-inner form .field{
     height: 50px;

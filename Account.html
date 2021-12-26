@@ -17,13 +17,59 @@
 
     <title>Products</title>
     <script>
-        function validateForm() {
-          let x = document.forms["login"]["validate"].value;
-          if (x == "") {
-            alert("All forms must be filled");
-            return false;
-          }
+        function Login(){
+            var email=document.getElementById("Email").value;
+            var pwd=document.getElementById("Password").value;
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        
+        
+        if(email==" ")
+        {
+            alert("Please enter an email");
         }
+        else if(pwd==""){
+            alert("Please enter a password");
+        }
+        else if(!filter.test(email)){
+            alert("Enter valid email id");
+        }       
+        else if(pwd.length < 8){
+            alert("Password is to short");
+        }
+    
+        
+        }
+        function SignUp(){
+            var email=document.getElementById("Email1").value;
+            var pwd=document.getElementById("Password1").value;
+            var pwd1=document.getElementById("Password2").value;
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        
+        
+        if(email==" ")
+        {
+            alert("Please enter an email");
+        }
+        else if(!filter.test(email)){
+            alert("Enter valid email id");
+        }
+        else if(pwd==""){
+            alert("Please enter a password");
+        }
+        else if(pwd1==""){
+            alert("Please enter a password")
+        }
+        
+        else if(pwd.length < 8){
+            alert("Password is to short");
+        }
+        else if(pwd1!=pwd){
+            alert("The password doesn't match");
+        }
+    
+    }
+
+        
         </script>
 </head>
 <body>
@@ -41,13 +87,9 @@
             <ul id = "MenuItems">
                 
                 <li> <a href="tech.html">Home</a></li>
-                <li> <a href="#">Products</a>
-                    <ul>
-                        <li><a href="products.html">Laptops</a></li>
-                        <li><a href="pc.html">PC</a></li>
-                    </ul>
-                    </li>
-                <li> <a href="Support.html">Support</a></li>
+                <li> <a href="products.html">Products</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
                 <li> <a href="Account.html">Account</a></li>
                 <li><div class = "search-box">
                     <input type="text" placeholder="Search..." class = "search-txt">
@@ -90,7 +132,7 @@
            </div>
            <div class="form-inner">
                  <!--Login form-->
-              <form name="login" action="#" class="login" onsubmit="return validateForm()"  >
+              <form name="login" action="#" class="login" onsubmit="Login()">
                 <div class="form-control">  
                 <div class="field">
                      
@@ -116,13 +158,13 @@
                  </div>
               </form>
               <!--Signup form-->
-              <form name="login" action="#" class="signup" onsubmit="return validateForm()">
+              <form name="login" action="#" class="signup" onsubmit="return SignUp()">
                  <div class="field">
-                    <input name="validate" type="text" id="Email" placeholder="Email Address" >
+                    <input name="validate" type="text" id="Email1" placeholder="Email Address" >
                  </div>
                  <small>Error message</small>
                  <div class="field">
-                    <input type="password" name="validate" id="Password" placeholder="Password" >
+                    <input type="password" name="validate" id="Password1" placeholder="Password" >
                  </div>
                  <small>Error message</small>
                  <div class="field">
@@ -160,123 +202,11 @@
           return false; //To change the form to sign up
         });
       
-//Form Validation 
-//Checking the inputs if they have value
-//           const form=document.getElementById('form');
-//           const Email=document.getElementById('Email');
-//           const Password=document.getElementById('Password');
-//           const Password2=document.getElementById('Password2');
-//          form.addEventListener('submit', (e)=>{
-//             e.preventDefault();
-//             checkInputs();
-//          });
-//       function checkInputs(){
-//           //get the values from the inputs;
-//           const emailValue=Email.value.trim(); //trim() removes the white space form the string
-//           const passValue=Password.value.trim();
-//           const pass2Value=Password2.value.trim();
-
-
-
-//           if(emailValue===''){
-//               //show error //add error class
-//              setErrorFor(Email, 'Please enter a valid email'); 
-//           }
-//           else{
-//               //add success class
-//               setSuccessFor(Email);
-//           }
-//           function setErrorFor(input,message){
-//               const formControl=input.parentElement;//form-control
-//               const small=formControl.querySelector('small');
-// //add error message inside  small
-//                small.innerText=message;
-//                // add error class
-//                formControl.className='form-control error ';
-          //}
-      // }
 
      </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-   
-
-    <!--Footer
-    <div class="footer">
-        <div class="container1">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Donwload App for Android and ios mobile phone</p>
-                    <div class="app-logo">
-                        <a href="https://play.google.com/store/apps" target = "_blank">
-                        <img src="images/googleplay.png" alt="" class = "googleplay"></a>
-                        <a href="https://www.apple.com/app-store/" target = "_blank">
-                        <img src="images/appstore.png" alt="" class = "appstore"></a>
-                        
-                    </div>
-                </div>
-                
-                <div class="footer-col-2">
-                    <img src="images/BrainTechLogo.jpg" alt="Our photo">
-                    <p>Our purpose is to sadsada</p>
-                    
-                    
-                </div>
-                <div class="footer-col-3">
-                    
-                    <h3>About us</h3>
-                        <ul>
-                            <li>Secure</li>
-                            <li>Reliable</li>
-                            <li>Advanced</li>
-
-                            
-                        </ul>
-                </div>
-                 
-                <div class="footer-col-4">
-                    
-                    <h3>Follow us</h3>
-                        <ul>
-                            <li>Linkedin</li>
-                            <li>Facebook</li>
-                            <li>Instagram</li>
-                            
-                        </ul>
-                </div>
-                 
-
-            </div>
-            <hr>
-            <p class = "copyright">Copyright &copy; 2021 BrainTech</p>
-        </div>
-    </div>-->
-    <!-- Toggle menu -->
+    
     
 </body>
 </html>
