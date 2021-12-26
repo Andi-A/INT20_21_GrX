@@ -687,7 +687,7 @@ small {
   position: fixed;
   top: 50%;
   left: 50%;
-  height: 85%;
+  height: 90%;
   transform: translate(-50%, -50%);
   width: 70%;
   background-color: white;
@@ -696,6 +696,7 @@ small {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   color:black;
+  overflow:scroll;
 }
 .close-button{
     position: absolute;
@@ -717,6 +718,7 @@ small {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(-5px);
   }
+ 
   .first-product-description h1,h2,h3 ,p , ul, li{
     color:black;
   }
@@ -735,7 +737,7 @@ small {
 
 .first-product-title #thinkpad , #thinkpad1{
     font-size:20px;
-    margin:20px 0 20px;
+    margin:0 0 20px;
 }
 .first-product-title #rating {
     margin:20px 0 20px;
