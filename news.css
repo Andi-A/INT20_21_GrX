@@ -264,6 +264,12 @@ h4 {
     height:305px;
     border-bottom: 4px solid white; 
 }
+
+.paragrafi{
+    column-count: 2;
+    column-gap: 10px;
+    color: white;
+}
 .image{
     width: 100%;
 }
