@@ -20,6 +20,34 @@
            font-style: normal;
        }
    </style>
+   <script type = "text/javascript">
+
+       const login = function(){
+            var email = document.getElementById('email').value;
+            var name = document.getElementById('name').value;
+            var surname = document.getElementById('surname').value;
+
+            if(email == ''){
+                    alert('Please enter data!');
+            }else if(name == '' ){
+                alert('Please enter data!');
+            }else if(surname == ''){
+                alter('Please enter data');
+            }else {
+                alert('Thank You for contacting us. We will respond your feedback soon :)');
+            }
+       }
+
+       const clearFunction = function(){
+           document.getElementById('email').value = "";
+            document.getElementById('name').value = "";
+            document.getElementById('surname').value = "";
+       }
+       const numberFunc = function(){
+            alert('Phone number must contain pre fix')
+       }
+
+   </script>
     <title>Support</title>
 </head>
 <body>
@@ -119,20 +147,21 @@
                 <div class = "contact-form">
             <form action="">
                 <div>
-                    <input type="text" class = "form-control" placeholder="First Name">
-                    <input type="text" class = "form-control" placeholder="Last Name">
+                    <input type="text" class = "form-control" placeholder="First Name" id = "name" onclick = "login();">
+                    <input type="text" class = "form-control" placeholder="Last Name" id = "surname" onclick = "login();">
                     
                 </div> 
 
                 <div>
 
-                    <input type="email" class = "form-control" placeholder="E-mail" required>
-                    <input type="text" class = "form-control" placeholder="Phone ">
+                    <input type="email" class = "form-control" placeholder="E-mail" required id = "email" onclick = "login()">
+                    <input type="text" class = "form-control" placeholder="Phone" id = "phone" onclick = "numberFunc();">
                     
                 </div>                                                  
                                                                                 <!-- resize          -->
                 <textarea rows = "5" placeholder="message" class = "form-control" style = "resize:none;"></textarea>
                 <input type="submit" class = "send-btn" value = "send message">
+                <input type="submit" class = "send-btn" value = "reset" style = "margin-left:10px;" onclick = "clearFunction();">
 
 
             </form>

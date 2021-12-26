@@ -29,7 +29,20 @@
              font-family: 'Poppins', sans-serif;
             }
     </style>
-    
+    <script type = "text/javascript">
+
+        function popUpFunction(){
+
+
+            // alert("Are you sure you want to leave this page");
+            console.log("Are you sure you want to leave this page ")
+        }
+
+        popUpFunction();
+        
+
+
+    </script>
 </head>
 <body>
 
@@ -47,7 +60,7 @@
             <nav>
                 <ul id = "MenuItems">
                     
-                    <li> <a href="tech.html">Home</a></li>
+                    <li> <a href="tech.html" id ="home" onclick = "popUpFunction();">Home</a></li>
                     <li> <a href="#">Products</a>
                         <ul>
                             <li><a href="products.html">Laptops</a></li>
@@ -119,7 +132,7 @@
                     <img src="/images/Laptops/news-1.jpg" alt="" class = "image">
                 </div>
                 <article class = "news-article">
-                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p class = "data">16 December 2021</p></div>
                     
                    <div style = "margin: 0 5px 0 10px ;">
                         <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
@@ -146,7 +159,7 @@
                         <img src="/images/Laptops/news-2.jpg" alt="" class = "image">
                     </div>
                     <article class = "news-article">
-                        <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                        <div style = "margin:10px 0 10px 10px; font-size:small"><p class = "data">16 December 2021</p></div>
                         
                        <div style = "margin: 0 5px 0 10px ;">
                             <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
@@ -501,25 +514,34 @@
     <script type="text/javascript">
 
 
+        
+        const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+
+        let  date = new Date();
+        let dataSot = date.getHours() + " " + monthNames[date.getMonth()]+ " " + date.getFullYear();
+
+        let paragraphDate = document.querySelector('.data');
+        paragraphDate.textContent = dataSot;
+        console.log(dataSot);
 
         // 
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.moveTo(0, 0);
-        ctx.lineTo(200, 100);
-        ctx.stroke();
+        // var c = document.getElementById("myCanvas");
+        // var ctx = c.getContext("2d");
+        // ctx.moveTo(0, 0);
+        // ctx.lineTo(200, 100);
+        // ctx.stroke();
 
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
+        // var c = document.getElementById("myCanvas");
+        // var ctx = c.getContext("2d");
 
-        // Create gradient
-        var grd = ctx.createLinearGradient(0, 0, 200, 0);
-        grd.addColorStop(0, "red");
-        grd.addColorStop(1, "white");
+        // // Create gradient
+        // var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        // grd.addColorStop(0, "red");
+        // grd.addColorStop(1, "white");
 
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(10, 10, 150, 80)
+        // // Fill with gradient
+        // ctx.fillStyle = grd;
+        // ctx.fillRect(10, 10, 150, 80)
 
 
 
