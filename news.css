@@ -304,6 +304,21 @@ h4 {
 
 
 
+.browsers{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#browser{
+    font-size:18px;
+    color:black;
+    padding:5px 5px ;
+}
+.label-browser{
+    margin-right:20px;
+    font-size: 18px;
+}
 
 
 

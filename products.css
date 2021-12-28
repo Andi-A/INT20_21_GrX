@@ -24,9 +24,7 @@ body {
     padding:20px;
   
 }
- .search-box  a input{
-   
-}   
+
 .search-box {
     
     top:50%;
@@ -172,10 +170,7 @@ p {
     background-color:lightslategray;
 
 }
-.header {
-   
 
-}
 .header .row {
     margin-top:70px;
 }
@@ -281,10 +276,7 @@ p {
     position: relative;
     border: 1px solid white;
 }
-/* TODOOOOOO  */
-.product-container-1-cell-2:hover{
 
-}
 .product-container-1-cell-2 h3{
     display: flex;
     justify-content: center;
@@ -517,8 +509,11 @@ small {
 /* Title editing */
 .title-4 {
     height:80px;
+   
 }
-
+.title-4 h3 {
+    color:white;
+}
 /* List editing */
 .list-4 {
     height:215px;

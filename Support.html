@@ -143,14 +143,14 @@
                 <div class = "contact-form">
             <form action="">
                 <div>
-                    <input type="text" class = "form-control" placeholder="First Name" id = "name" onclick = "login();">
-                    <input type="text" class = "form-control" placeholder="Last Name" id = "surname" onclick = "login();">
-                    
+                    <input type="text" class = "form-control" placeholder="First Name" id = "name" onclick = "login();" autofocus>
+                    <input type="text" class = "form-control" placeholder="Last Name" id = "surname" onclick = "login();" autofocus>
+                        
                 </div> 
 
                 <div>
 
-                    <input type="email" class = "form-control" placeholder="E-mail" required id = "email" onclick = "login()">
+                    <input type="email" class = "form-control" placeholder="E-mail" required id = "email" onclick = "login()" autocomplete required >
                     <input type="text" class = "form-control" placeholder="Phone" id = "phone" onclick = "numberFunc();">
                     
                 </div>                                                  

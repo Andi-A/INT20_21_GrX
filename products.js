@@ -17,16 +17,21 @@ const overlay = document.querySelector('.overlay');
 
 // close button at first product window
 const close_btn = document.querySelector('.close-button');
+
 // learn more button on product 
-const btnLearnMore = document.getElementById('LearnMore');
+const btnLearnMore = document.querySelectorAll('.learnmore-1');
+console.log(btnLearnMore);
 
 
 
 // with this event handler we display the window of first product 
-btnLearnMore.addEventListener('click',function(){
-   first_product.classList.remove('hidden');
-   overlay.classList.remove('hidden');
-});
+for(let i = 0 ;i < btnLearnMore.length;i++){
+    btnLearnMore[i].addEventListener('click',function(){
+        first_product.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+     });
+}
+
 
 // 1.
 // with 1 and 2 event handler we close the first product window 
