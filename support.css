@@ -210,8 +210,13 @@ nav ul li ul li a:hover{
     margin:0 auto;
     text-align:center;
 }
-.contact-map{
-    margin-left:32px;  
+
+
+
+#map{
+    height: 500px;
+    width: 100%;
+    
 }
 .map iframe{
     border-radius: 4px;
@@ -288,6 +293,9 @@ nav ul li ul li a:hover{
 }
 
 /* Footer */
+.footer-title{
+    animation:1s linear infinite alternate-reverse;
+}
 .footer {   
     font-size:14px;
     padding:60px 0 20px;

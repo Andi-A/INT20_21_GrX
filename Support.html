@@ -22,6 +22,7 @@
        }
       
    </style>
+   <script src="Support.js"></script>
    <script type = "text/javascript">
 
        const login = function(){
@@ -168,13 +169,25 @@
             </div>
         </div>
        </div>
-        <div class = "contact-map" id = "contact-map">
-            <h3>Location</a></h3>
-            <div class = "map" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a9382dfe231%3A0xc54b132ef85bb46e!2sBraintech%20Solutions!5e0!3m2!1sen!2s!4v1637529826214!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <div id = "map">
+            
         </div>
-    
+        <script>
+            function initMap(){
+    var location = {lat:42.648383,lng:21.166530 };
+    var map = new google.maps.Map(document.getElementById("map"),{
+        zoom:4,//Zooming when map is loaded
+        center: location
+
+    });
+    var marker=new google.maps.Marker({
+        position:location,
+        map:map
+    });
+}   
+
+        </script>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ6MimESIDNUIQ2VTcrBoWO1GJfXNYJQQ&callback=initMap"></script>
     </section>
 
 
@@ -197,7 +210,7 @@
             </div>
             <div class = "footer-title">
                 <div>
-                    <h2>TEAM UP. FLIGHT ON</h2>
+                    <h2 >TEAM UP. FLIGHT ON</h2>
                 </div>
             </div>
 
