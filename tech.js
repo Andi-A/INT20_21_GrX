@@ -5,7 +5,15 @@
 
 
 
+const div=document.querySelector("#myDiv");
+div.addEventListener("mousedown", e =>{
+div.style.backgroundColor='	#000080';
+});
+   
 
+div.addEventListener("mouseup", e =>{
+div.style.backgroundColor='#483d8b 	';
+});
 
 
 

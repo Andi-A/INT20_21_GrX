@@ -27,12 +27,13 @@
       {
           alert("Please enter an email");
       }
+      else if(!filter.test(email)){
+          alert("Enter valid email id");
+      }  
       else if(pwd==""){
           alert("Please enter a password");
       }
-      else if(!filter.test(email)){
-          alert("Enter valid email id");
-      }       
+           
       else if(pwd.length < 8){
           alert("Password is to short");
       }
@@ -64,7 +65,7 @@
           alert("Password is to short");
       }
       else if(pwd1!=pwd){
-          alert("The password doesn't match");
+          alert("Password don't match");
       }
   
   }
@@ -85,9 +86,15 @@
             <ul id = "MenuItems">
                 
                 <li> <a href="tech.html">Home</a></li>
-                <li> <a href="products.html">Products</a></li>
-                <li> <a href="">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="#">Products</a>
+                    <ul>
+                        <li><a href="products.html">Laptops</a></li>
+                        <li><a href="pc.html">PC</a></li>
+                        
+                    </ul>
+                    </li>
+                
+                <li> <a href="Support.html">Support</a></li>
                 <li> <a href="Account.html">Account</a></li>
                 <li><div class = "search-box">
                     <input type="text" placeholder="Search..." class = "search-txt">
