@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <title>BrainTech</title>
     <style>
             *{
@@ -89,10 +93,10 @@
         <div class="small-container">
         <div class="row">
             <div class="col-3">
-                <img src="images/pic-aorus.png" alt="">
+                <img src="images/pic-aorus.png" alt="" class = "col-3-picture-1">
             </div>
             <div class="col-3">
-                <img src="images/aours-2.jpg" alt="">
+                <img src="images/aours-2.jpg" alt="" class = "col-3-picture-2">
             </div>
             <div class="col-3">
                 <img src="images/aours-1.jpg" alt="">
@@ -262,7 +266,7 @@
 
                     
                     <i class = "fas fa-search"></i>
-                    <input list="search-text"  id = "search-text" placeholder="Example:Gaming Laptop">
+                    <input list="search-text"  id = "search-text" placeholder="Example:Gaming Laptop" class = "reinvent-search-box">
                     <input type="submit" value = "SEARCH" id = "search-button">
 
 
@@ -325,7 +329,8 @@
             
             <div class = "footer-logo">
                 <div>
-                    <img src="images/BrainTechLogo.jpg" alt="BrainTech Logo">
+                    <img src="images/BrainTechLogo.jpg" alt="BrainTech Logo" class = "footer-image-logo">
+                    <h5 class = "show-logo" style = "text-align:center;cursor:pointer;text-decoration:underline"> Show logo</h5>
                 </div>
             </div>
             <div class = "footer-title">
@@ -425,7 +430,7 @@
     </footer>
 
 
-    <script type = "text/javascript">
+    <script src = "tech.js">
         // task 10 
 
 
