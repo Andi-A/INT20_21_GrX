@@ -66,3 +66,22 @@ $('.show-logo').click(showLogo);
 
 
 
+// Press enter to hide offer
+
+$(function(){
+    var ImageTrigger=false;
+$(".offer").hide(function(){
+    $(document).keypress(function(e){
+     
+        if(ImageTrigger===false){
+            $('.offer').fadeIn(500);
+            ImageTrigger=true;
+    
+        }
+        else if(ImageTrigger===true){
+            $('.offer').fadeOut(500);
+            ImageTrigger=false;
+        }
+    })});
+
+});
