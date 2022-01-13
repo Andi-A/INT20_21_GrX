@@ -74,7 +74,7 @@ var ImageTrigger=false;
 
 $(".offer").hide(function(){
     $(document).keypress(function(e){
-     
+    
         if(ImageTrigger === false){
             $('.offer').fadeIn(500);
             ImageTrigger = true;
@@ -84,6 +84,7 @@ $(".offer").hide(function(){
             $('.offer').fadeOut(500);
             ImageTrigger = false;
         }
+    
 })});
 
 
