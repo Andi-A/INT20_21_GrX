@@ -8,11 +8,12 @@
 // styling reinvet search 
 
 $("#reinvent-search").text("Can't find what you're looking for ?");
+
 $("#reinvent-search").css('fontSize','30px');
+
 $("#reinvent-search").css('color','white');
+
 $("#reinvent-search").css('backgroundColor','black');
-
-
 
 
 
