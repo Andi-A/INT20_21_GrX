@@ -45,18 +45,6 @@ $("#reset-btn").click(clearFunction);
 
 $("#textarea").click(login);
 
-$("#send-message").click(function() {
-    alert("Thank you for your feed back we will respond you soon :) ");
-})
-
-
-
-
-
-
-
-
-
 
 $("#send-message").click(function () {
     alert('Thank You for contacting us. We will respond your feedback soon :)');
