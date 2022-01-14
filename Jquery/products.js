@@ -1,47 +1,72 @@
 
 
-
-
-
-
 'use strict'
-
 
 // first product window 
 const first_product = document.querySelector('.first-product');
-
+// const $first_product = $(".first-product");
 
 // blur background window 
 const overlay = document.querySelector('.overlay');
 
+
 // close button at first product window
 const close_btn = document.querySelector('.close-button');
 
+
+// close_btn.addEventListener('click',function(){
+    
+//     first_product.classList.add('hidden');
+//     overlay.classList.add('hidden');
+// });
+// 2.
+// overlay.addEventListener('click', function(){
+    //     first_product.classList.add('hidden');
+    //     overlay.classList.add('hidden');
+    // })
+
+
+
+
+
+
+
+
+
+
 // learn more button on product 
 const btnLearnMore = document.querySelectorAll('.learnmore-1');
+
 console.log(btnLearnMore);
-
-
 
 // with this event handler we display the window of first product 
 for(let i = 0 ;i < btnLearnMore.length;i++){
     btnLearnMore[i].addEventListener('click',function(){
-        first_product.classList.remove('hidden');
-        overlay.classList.remove('hidden');
+            $(".first-product").removeClass("hidden");
+            // first_product.classList.remove('hidden');
+            $(".overlay").removeClass("hidden");
+            // overlay.classList.remove('hidden');
      });
 }
 // 1.
 // with 1 and 2 event handler we close the first product window 
-close_btn.addEventListener('click',function(){
-    first_product.classList.add('hidden');
-    overlay.classList.add('hidden');
-});
-// 2.
-overlay.addEventListener('click', function(){
-    first_product.classList.add('hidden');
-    overlay.classList.add('hidden');
-})
 
+    $(".close-button").click(function() {
+
+        $(".first-product").attr( "class", "hidden" );
+
+        $(".overlay").attr( "class", "hidden" );
+
+    })
+
+    
+    $(".overlay").click(function() {
+    
+        $(".first-product").attr( "class", "hidden" );
+        
+        $(".overlay").attr( "class", "hidden" );
+    
+    });
 
 
 
@@ -62,7 +87,8 @@ const thinkpadX1 = {
 }
 const displayFeatures = function (product){
     // first empty feature product 
-    firstProductContainer.innerHTML = '';
+    
+    $(".col-4-1").html(" ");
 
     const html = `<div class = "img-4">
     <img src="${product.image}" alt="">
@@ -82,7 +108,9 @@ const displayFeatures = function (product){
             </div>
     </div>`;
 
-    firstProductContainer.insertAdjacentHTML('afterbegin',html);
+    $(".col-4-1").append(html);
+
+    // firstProductContainer.insertAdjacentHTML('afterbegin',html);
 }
 
 displayFeatures(thinkpadX1);

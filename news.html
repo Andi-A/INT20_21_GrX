@@ -182,15 +182,16 @@
                     </article>
             </div>
 
-            <div class="row-news">
+            <div class="row-news" id =  "row-news-1">
 
                 <div class = "news-image">
-                    <img src="/images/Laptops/news-4.png" alt="" class = "image">
+                    <img src="/images/Laptops/news-4.png" alt="" class = "image" id = "image-1">
                 </div>
-                <article class = "news-article">
+                <article class = "news-article" id = "article">
                     <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
                     
                    <div style = "margin: 0 5px 0 10px ;">
+                        <h3 id = "hide" style = "text-decoration: underline; color:aqua;cursor:pointer;">Hide</h3>
                         <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
                             Lenovo Legion Extends Partnership with G2 Esports and Supports G2’s First Ever All-Female VALORANT Team
                             
@@ -273,7 +274,7 @@
         
        <div class = "aside-container">
 
-            <div class = "" style = "display: flex; justify-content: space-between; margin-bottom: 40px;" >
+            <div class = "" style = "display: flex; justify-content: space-between; margin-bottom: 40px;" id = "">
                 <h2 style = "margin:10px 0 0 20px" id = "kits">Featured Press Kits</h2>
                 
                 <input type="submit" value = "View All" id = "view-all">
@@ -290,7 +291,7 @@
 
                     
                     <div>
-                        <img src="/images/Laptops/aside-news-2.jpg" alt="" style = "width: 100%; height: 170px" >
+                        <img src="/images/Laptops/aside-news-2.jpg" alt="" style = "width: 100%; height: 170px" id = "">
                         <h3>MWC 2021</h3>
                     </div>
 
@@ -298,14 +299,14 @@
                     
                 </div>
                 
-                <div style = "display: flex; justify-content:space-around; margin:5px; gap:5px">
+                <div style = "display: flex; justify-content:space-around; margin:5px; gap:5px" id = "">
                     <div>
                         <img src="/images/Laptops/aside-news-3.jpg" alt="" style = "width: 100%; height: 170px" >
                         <h3>CES 2021</h3>
                     </div>
                     
                     <div> 
-                         <img src="/images/Laptops/aside-news-4.jpg" alt="" style = "width: 100%; height: 170px" >
+                         <img src="/images/Laptops/aside-news-4.jpg" alt="" style = "width: 100%; height: 170px" id = "">
                          <h3 style = "line-height: 20px;">LENOVO NEW <br> REALITIES </h3>
                     </div>
                 </div>
@@ -466,16 +467,16 @@
                     <img src="/images/Laptops/news-8.jpg" alt="" class = "image" draggable="false">
                 </div>
                 <article class = "news-article">
-                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    <div style = "margin:10px 0 10px 10px; font-size:small" id = "last-news-date"><p>16 December 2021</p></div>
                     
                    <div style = "margin: 0 5px 0 10px ;">
-                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;" id = "last-news-title">
                             Lenovo Becomes the Preferred Workstation Innovation Partner for DreamWorks Animation
                             
                         </p>
                         
                         <br>
-                        <p class="paragrafi">
+                        <p class="paragrafi" id = "last-news-paragraph">
                             DreamWorks Animation will use Lenovo’s high-performance ThinkStation and ThinkPad P Series workstations to accelerate their most challenging workflows.
                         </p>
                    </div>
@@ -624,24 +625,7 @@
 
 
 
-    <script src = "news.js">
-
-
-        
-        const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
-
-        let  date = new Date();
-        let dataSot = date.getHours() + " " + monthNames[date.getMonth() + 1]+ " " + date.getFullYear();
-        
-        let paragraphDate = document.querySelector('.data');
-        paragraphDate.textContent = dataSot;
-        console.log(dataSot);
-
-        
-
-
-
-
+    <script src = "Jquery/news.js">
 
 
     </script>

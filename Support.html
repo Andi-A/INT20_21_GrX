@@ -14,41 +14,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "f00ter.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    
    <style>
        body{
           
            text-decoration: none;
            font-style: normal;
+           
+       }
+
+       input {
+           color:black;
+       }
+       textarea{
+           color:black;
        }
       
    </style>
-   <script src="Support.js"></script>
-   <script type = "text/javascript">
+   
+   <script>
 
-       const login = function(){
-            var email = document.getElementById('email').value;
-            var name = document.getElementById('name').value;
-            var surname = document.getElementById('surname').value;
+      
 
-            if(email == ''){
-                    alert('Please enter data!');
-            }else if(name == '' ){
-                alert('Please enter data!');
-            }else if(surname == ''){
-                alter('Please enter data');
-            }else {
-                alert('Thank You for contacting us. We will respond your feedback soon :)');
-            }
-       }
-
-       const clearFunction = function(){
-           document.getElementById('email').value = "";
-            document.getElementById('name').value = "";
-            document.getElementById('surname').value = "";
-       }
-       const numberFunc = function(){
-            alert('Phone number must contain pre fix')
-       }
+       
+        
 
    </script>
     <title>Support</title>
@@ -146,22 +139,25 @@
                 <div class = "contact-form">
             <form action="">
                 <div>
-                    <input type="text" class = "form-control" placeholder="First Name" id = "name" onclick = "login();" autofocus>
-                    <input type="text" class = "form-control" placeholder="Last Name" id = "surname" onclick = "login();" autofocus>
+                    <input type="text" class = "form-control" placeholder="First Name" id = "name" onclick = "" autofocus>
+                    <input type="text" class = "form-control" placeholder="Last Name" id = "surname" onclick = "" autofocus>
                         
                 </div> 
 
                 <div>
 
-                    <input type="email" class = "form-control" placeholder="E-mail" required id = "email" onclick = "login()" autocomplete required >
-                    <input type="text" class = "form-control" placeholder="Phone" id = "phone" onclick = "numberFunc();">
+                    <input type="email" class = "form-control" placeholder="E-mail" required id = "email" onclick = "" autocomplete required >
+                    <input type="text" class = "form-control" placeholder="Phone" id = "phone" onclick = "">
                     
                 </div>                                                  
                                                                                 <!-- resize          -->
-                <textarea rows = "5" placeholder="message" class = "form-control" style = "resize:none;"></textarea>
-                <input type="submit" class = "send-btn" value = "send message">
-                <input type="submit" class = "send-btn" value = "reset" style = "margin-left:10px;" onclick = "clearFunction();">
+                <textarea rows = "5" placeholder="message" class = "form-control" style = "resize:none;" id  = "textarea"></textarea>
+                <!-- <input type="submit" class = "send-btn" value = "send message" id = "send-message1" class = "send-information"> -->
+                <button class = "send-btn" id = "send-message">Send Message</button>
 
+                <input type="submit" class = "send-btn" value = "reset" style = "margin-left:10px;" id = "reset-btn" >
+<!--                 
+                <button style = "margin-left:10px" onclick = "clearFunction()" class = "send-btn" id = "reset-btn">Reset</button> -->
 
             </form>
             <div>
@@ -172,22 +168,7 @@
         <div id = "map">
             
         </div>
-        <script>
-            function initMap(){
-            var location = {lat:42.648383,lng:21.166530 };
-            var map = new google.maps.Map(document.getElementById("map"),{
-                zoom:4,//Zooming when map is loaded
-                center: location
-
-            });
-            var marker = new google.maps.Marker({
-                position:location,
-                map:map
-            });
-}   
-
-        </script>
-       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ6MimESIDNUIQ2VTcrBoWO1GJfXNYJQQ&callback=initMap"></script>
+        
     </section>
 
 
@@ -305,6 +286,26 @@
     </footer>
 
     <!-- Toggle menu -->
-    
+    <script src = "Jquery/Support.js">
+
+    </script>
+
+
+<script>
+    function initMap(){
+    var location = {lat:42.648383,lng:21.166530 };
+    var map = new google.maps.Map(document.getElementById("map"),{
+        zoom:4,//Zooming when map is loaded
+        center: location
+
+    });
+    var marker = new google.maps.Marker({
+        position:location,
+        map:map
+    });
+}   
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ6MimESIDNUIQ2VTcrBoWO1GJfXNYJQQ&callback=initMap"></script>
 </body>
 </html>
