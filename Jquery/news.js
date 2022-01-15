@@ -75,7 +75,7 @@ const showMoreNews = function() {
     
     $('.last-news-rows').fadeIn("slow");
     
-    $('#show-more-button-text').text("Show Less News...");
+    $('#show-more-button-text').text("Show Less News...");//Set
 
 }
     $('#show-more-button').click(showMoreNews);
