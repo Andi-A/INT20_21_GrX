@@ -26,14 +26,6 @@ const close_btn = document.querySelector('.close-button');
     // })
 
 
-
-
-
-
-
-
-
-
 // learn more button on product 
 const btnLearnMore = document.querySelectorAll('.learnmore-1');
 
@@ -42,6 +34,7 @@ console.log(btnLearnMore);
 // with this event handler we display the window of first product 
 for(let i = 0 ;i < btnLearnMore.length;i++){
     btnLearnMore[i].addEventListener('click',function(){
+        
             $(".first-product").removeClass("hidden");
             // first_product.classList.remove('hidden');
             $(".overlay").removeClass("hidden");
@@ -126,4 +119,19 @@ const changePictures = function () {
 }
 
 $('#show-up').click(changePictures);
+
+
+
+$("#click-animate").click(function() {
+
+    $("#footer-logo-animate").animate({height: '100px', opacity: '0,1'}, "slow");
+    $("#footer-logo-animate").animate({height: '200px', opacity: '0.7'}, "slow");
+    $("#footer-logo-animate").animate({height: '50px', opacity: '0.1'}, "fast");
+    $("#footer-logo-animate").animate({height: '100px', opacity :'1'},"slow");
+
+});
+
+
+
+
 

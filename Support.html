@@ -156,12 +156,17 @@
                 <button class = "send-btn" id = "send-message">Send Message</button>
 
                 <input type="submit" class = "send-btn" value = "reset" style = "margin-left:10px;" id = "reset-btn" >
-<!--                 
+            <!--                 
                 <button style = "margin-left:10px" onclick = "clearFunction()" class = "send-btn" id = "reset-btn">Reset</button> -->
 
             </form>
             <div>
-                <img src="images/contact-us.png" alt="">
+
+                <div style = "display:flex; justify-content: center;">
+                    <h3 id = "show" style = "margin-left:20px">Show</h3>
+                    <h3 id = "hide" style = "margin-left:20px">Hide</h3>
+                </div>
+                <img src="images/contact-us.png" alt="" id = "image-1-1">
             </div>
         </div>
        </div>
@@ -289,7 +294,54 @@
     <script src = "Jquery/Support.js">
 
     </script>
+    
+    <div id = "div1">
 
+        <h3 id = "resultCounter">
+            <div id = "div3">
+                <output id = "result"  style = "color:rgb(17, 3, 17); font-size:20px;"></output>
+
+            </div>
+        </h3>
+    </div>  
+
+    <style>
+
+        #div1{
+            height:40px;
+            width:70px;
+            position:absolute;
+            position: fixed;
+            right:10px;
+            bottom:10px;
+            background: linear-gradient(rgb(189, 182, 255), rgb(143, 112, 172));
+
+        }
+        #div3{
+            
+            font-size:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center !important;
+
+        }
+        </style>
+
+        <script>
+            if(window.Worker){
+                var worker = new Worker("webworkers.js");
+
+                worker.onmessage = function(event){
+
+                        document.getElementById("result").innerHTML = event.data;
+                         
+                }
+                }else{
+
+                    alert("Sorry , your browser don't support web worker");
+
+                }
+        </script>
 
 <script>
     function initMap(){
@@ -306,6 +358,8 @@
 }   
 
 </script>
+    
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ6MimESIDNUIQ2VTcrBoWO1GJfXNYJQQ&callback=initMap"></script>
+
 </body>
 </html>

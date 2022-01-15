@@ -48,7 +48,21 @@ $("#textarea").click(login);
 
 $("#send-message").click(function () {
     alert('Thank You for contacting us. We will respond your feedback soon :)');
-})
+});
+
+
+
+$("#show").click(function() {
+    $("#image-1-1").show();
+});
+
+
+$("#hide").click(function() {
+    $("#image-1-1").hide();
+});
+
+
+
 
 
 

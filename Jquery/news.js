@@ -7,14 +7,14 @@ const monthNames = ["January", "February", "March", "April", "May", "June","July
 
 let  date = new Date();
 
-var dataSot = date.getHours() + " " + monthNames[date.getMonth() + 1]+ " " + date.getFullYear();
+var dataSot = date.getHours() + " " + monthNames[date.getMonth()]+ " " + date.getFullYear();
  
 
 
 // first hide news 
 const hideLastNews = () => $('.last-news-rows').css('display','none');
 
-hideLastNews();
+    hideLastNews();
 
 // storing show news button container
 
@@ -47,14 +47,14 @@ $("#news-4-1").click(function(){
 }); 
 
 
-
+    
     $("#hide").click(function(){
         $("#row-news-1").animate({
             left: '250px',
             opacity: '0.5',
             height: '150px',
             width: '150px'
-        });
+        }); //callback
         $("#row-news-1").hide("slow", function(){
             alert("The article is hidden");
           });
@@ -78,7 +78,7 @@ const showMoreNews = function() {
     $('#show-more-button-text').text("Show Less News...");
 
 }
-$('#show-more-button').click(showMoreNews);
+    $('#show-more-button').click(showMoreNews);
 
 
 
@@ -101,5 +101,7 @@ let description = `DreamWorks Animation will use Lenovo’s high-performance Thi
 let dataOf = dataSot;
 
 addContentToNewsSection(dataOf, title,description);
+
+
 
 

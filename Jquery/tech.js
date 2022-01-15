@@ -57,13 +57,18 @@ $secondImage.click(function() {
 console.log($firstImage);
 
 
+
+
+
+
+
 // Hide text under logo
 $('.show-logo').css('display','none');
 console.log($('.show-logo'));
 
 // Hide logo with jquery
 function hideLogo() {
-    $('.footer-image-logo').hide();
+    $('.footer-image-logo').hide(); 
     $('.show-logo').css('display','block');
 }
 $('.footer-image-logo').click(hideLogo);
@@ -77,8 +82,8 @@ function showLogo() {
 $('.show-logo').click(showLogo);
 
 
-// Press enter to hide offer
 
+// Press enter to hide offer
 
 var ImageTrigger = false;
 
